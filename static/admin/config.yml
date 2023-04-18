@@ -1,10 +1,9 @@
 backend:
   name: github
-  repo: GROWDND/RxGuardian
+  repo: jasonsutter87/TheSnackAttack
 
   branch: master # Branch to update (optional; defaults to master)
-
-
+  
 # This line should *not* be indented
 publish_mode: editorial_workflow
 
@@ -13,33 +12,36 @@ media_folder: "static/images/uploads" # Media files will be stored in the repo u
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
-  # Blog
-  - label: "Blogs" # Used in the UI
-    name: "blogPages" # Used in routes, e.g., /admin/collections/blog
-    folder: "content/news/blog" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    publish_mode:
-      name: "stage"
-      label: "Stage"
-      widget: "select"
-      default: "draft"
-      options:
-        - {label: "Draft", value: "draft"}
-        - {label: "Published", value: "published"}
-    fields: # The fields for each document, usually in front matter
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Description", name: "description", widget: "string"}
-    - {label: "Slug", name: "slug", widget: "string"}
-    - {label: "Main Image", name: "mainImage", widget: "image"}
-    - {label: "Thumb Image", name: "thumbImage", widget: "image"}
-    - {label: "Alt", name: "alt", widget: "string"}
-    - {label: "Tags", name: "tags", widget: "list"}
-    - {label: "Priority", name: "priority", widget: "string", default: "0.5"}
-    - {label: "Draft", name: "draft", widget: "boolean", default: true}
-    # - {label: "Share", name: "share", widget: "boolean", default: true}
-    # - {label: "Popular", name: "popular", widget: "boolean", required: false}
-    - {label: "Publish Date", name: "date", widget: "datetime"}
-    - {label: "Page Type", name: "pagetype", widget: "string", default: "article"}
-    - {label: "Layout", name: "type", widget: "string", default: "news/blog"}
-    - {label: "Body", name: "body", widget: "markdown"}
+  - name: "covers"
+    label: "Covers"
+    folder: "content/covers"
+    create: true
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "secondary title", label: "Secondary Title", widget: "string" }
+      - { name: "type", label: "Type", widget: "select", options: [ "cover1", "cover2", "cover3", "cover4"] }
+      - { name: "images", label: "Images", widget: "list", max: 1, allow_add: true, allow_delete: true, fields: [
+          { label: "Image", name: "image", widget: "image" },
+          { label: "Caption", name: "caption", widget: "string", required: false }
+        ]}
+
+  - name: "recipes"
+    label: "Recipes"
+    folder: "content/recipes"
+    create: true
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "type", label: "Type", widget: "select", options: [ "recipe 1", "recipe 2", "recipe 3", "recipe 4", "recipe 5", "recipe 6", "recipe 7", "recipe 8", "recipe 9", "recipe 10", "recipe 11", "recipe 12", "recipe 13", "recipe 14", "recipe 15", "recipe 16"] }
+      - { name: "intro", label: "Introduction", widget: "markdown", required: false}
+      - { name: "prep_time", label: "Preparation Time (in minutes)", widget: "number" }
+      - { name: "cook_time", label: "Cooking Time (in minutes)", widget: "number" }
+      - { name: "serves", label: "Number of Servings", widget: "number" }
+      - { name: "ingredients", label: "Ingredients", widget: "markdown" }
+      - { name: "directions", label: "Directions", widget: "markdown" }
+      - { name: "notes", label: "Notes", widget: "markdown", required: false}
+      - { name: "images", label: "Images", widget: "list", max: 4, allow_add: true, allow_delete: true, fields: [
+          { label: "Image", name: "image", widget: "image" },
+          { label: "Caption", name: "caption", widget: "string", required: false }
+        ]}
+
+ 
