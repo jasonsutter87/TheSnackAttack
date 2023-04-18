@@ -27,5 +27,5 @@ directions: |
      sides and center of each pancake. Flip and cook
      until golden, about 1 to 2 mins
 images:
-  - image: /images/uploads/nft-medgar-evers-color-03.jpg
+  - image: /images/uploads/toastoven-blog-6.jpg
 ---
