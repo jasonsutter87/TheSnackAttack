@@ -1,0 +1,829 @@
+//////////////////////////////////////////////////////////////
+//                                                          ||
+//                   HTML/Body/Containers                   ||
+//                                                          ||
+//////////////////////////////////////////////////////////////
+$primary: #0079C7; //blue
+
+$white: #ffffff; //White
+$light: #F4F4F4; //light grey
+$mid: #707070; //mid grey
+$black: #444444; //black
+
+$borderColor: #CECECE;
+
+$font-size: 18px;
+$line-height: 30px;
+
+$font-weight-400: 400;
+$font-weight-600: 600;
+
+
+$btn-padding-size: 30px;
+$transition-speed: .5s;
+$font-family: 'Open Sans', sans-serif !important;
+$line-height: 24px;
+$font-size: 16px;
+
+//////////////////////////////////////////////////////////////
+//                                                          ||
+//                        Utilities                         ||
+//                                                          ||
+//////////////////////////////////////////////////////////////
+
+.sr-only {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: $font-family;
+    margin: 0;
+    font-weight: $font-weight-400;
+    line-height: $line-height;
+    color: $black;
+    text-align: left;
+    height: 100%;
+    transition: $transition-speed;
+    scroll-behavior: smooth;
+}
+
+.main-content {
+  min-height: 53%;
+}
+
+.container {
+    padding: unset !important;
+}
+
+
+.site-container-1240 {
+  margin: auto;
+  position: relative;
+  max-width: 1240px !important;
+  width: 100%;
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+
+  @media (min-width: 992px) {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
+
+
+.site-container-1200 {
+    margin: auto;
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+
+    @media (min-width: 992px) {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+    }
+}
+
+.site-container-992 {
+    margin: auto;
+    position: relative;
+    max-width: 992px;
+    width: 100%;
+
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+
+    @media (min-width: 992px) {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+    }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 992px) {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
+
+
+
+.row {
+    margin-right: -30px;
+    margin-left: -30px;
+
+    @media (min-width: 992px) {
+      margin-right: -15px !important;
+      margin-left: -15px !important;
+    }
+}
+
+
+.row>* {
+    padding-right: 30px;
+    padding-left:  30px;
+
+    @media (min-width: 992px) {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+    }
+}
+
+
+.ul-reset {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    font-size: $font-size;
+    font-weight: $font-weight-400;
+    line-height: $line-height;
+    font-family: $font-family;
+}
+
+ol li {
+    font-size: $font-size;
+    font-weight: $font-weight-400;
+    line-height: $line-height;
+    font-family: $font-family;
+}
+
+.col-lg-5col {
+ @media (min-width: 992px) {
+   flex: 0 0 auto !important;
+   width: 20% !important;
+ }
+}
+
+.mr-2{
+  margin-right: .25rem !important;
+}
+
+
+.t-c-l {
+  text-align: center !important;
+
+  @media (min-width: 992px) {
+    text-align: left !important;
+  }
+}
+
+
+.t-c-l-md {
+  text-align: center !important;
+
+  @media (min-width: 768px) {
+    text-align: left !important;
+  }
+}
+
+.ml-4 {
+      margin-left: 0.75rem !important;
+}
+
+
+
+.w-80 {
+  width: 80% !important;
+}
+
+
+//////////////////////////////////////////////////////////////
+//                                                          ||
+//                        Text Colors                       ||
+//                                                          ||
+//////////////////////////////////////////////////////////////
+
+.primary-text {
+    color: $primary !important;
+}
+
+.white-text {
+    color: $white !important;
+}
+
+
+//////////////////////////////////////////////////////////////
+//                                                          ||
+//                  Background Colors                       ||
+//                                                          ||
+//////////////////////////////////////////////////////////////
+
+.primary-bg {
+    background-color: $primary !important;
+}
+
+.light-bg {
+  background-color: $light !important;
+}
+
+
+
+.white-text {
+    color: $white !important;
+}
+
+
+
+//////////////////////////////////////////////////////////////
+//                                                          ||
+//                         Links                            ||
+//                                                          ||
+//////////////////////////////////////////////////////////////
+.primary-link {
+    color: $primary !important;
+    text-decoration: none;
+    transition: $transition-speed !important;
+    font-weight: $font-weight-600;
+    font-size: calc(#{$font-size} * 1) !important;
+    line-height: calc(#{$line-height} * 0.833) !important;
+
+    &:hover,
+    &:active {
+        color: $black !important;
+    }
+}
+
+.white-link {
+    color: $white !important;
+    text-decoration: none;
+    transition: $transition-speed !important;
+    font-weight: $font-weight-600;
+    font-size: calc(#{$font-size} * 1) !important;
+    line-height: calc(#{$line-height} * 0.833) !important;
+
+    &:hover,
+    &:active {
+        color: $black !important;
+    }
+}
+
+
+.bold {
+  font-weight: $font-weight-600 !important;
+}
+
+.g-6, .gx-6 {
+    --bs-gutter-x: 4rem;
+}
+
+//////////////////////////////////////////////////////////////
+//                                                          ||
+//                         Headers                          ||
+//                                                          ||
+//////////////////////////////////////////////////////////////
+h1, h2, h3, h4, h5, h6 {
+    color: unset;
+}
+
+h1,
+.h1-heading {
+    font-size: calc(#{$font-size} * 3) !important;
+    font-weight: $font-weight-600;
+    line-height: calc(#{$line-height} * 2.16) !important;
+    font-family: $font-family;
+}
+
+.h1-blog-heading {
+    font-size: calc(#{$font-size} * 2) !important;
+    font-weight: $font-weight-600;
+    line-height: calc(#{$line-height} * 1.4) !important;
+    font-family: $font-family;
+}
+
+
+
+h2,
+.h2-heading {
+    font-size: calc(#{$font-size} * 2.25) !important;
+    font-weight: $font-weight-600;
+    line-height: calc(#{$line-height} * 1.66) !important;
+    font-family: $font-family;
+}
+
+h3,
+.h3-heading {
+    font-size: calc(#{$font-size} * 1.75) !important;
+    font-weight: $font-weight-600;
+    line-height: calc(#{$line-height} * 1.5) !important;
+    font-family: $font-family;
+    padding-bottom: 10px !important;
+}
+
+span.SubHead,
+h4,
+.h4-heading {
+    font-size: calc(#{$font-size} * 1.5) !important;
+    font-weight: $font-weight-400;
+    line-height: calc(#{$line-height} * 1.166) !important;
+    font-family: $font-family;
+}
+
+h5,
+.h5-heading {
+    font-size: calc(#{$font-size} * 1.25) !important;
+    font-weight: $font-weight-400;
+    line-height: calc(#{$line-height} * 1.166) !important;
+    font-family: $font-family;
+}
+
+h6,
+.h6-heading {
+    font-size: calc(#{$font-size} * 1.125) !important;
+    font-weight: $font-weight-600;
+    line-height: calc(#{$line-height} * 1.083) !important;
+    font-family: $font-family;
+
+}
+
+p {
+    font-size: calc(#{$font-size} * 1) !important;
+    font-weight: $font-weight-400;
+    line-height: calc(#{$line-height} * 1) !important;
+    font-family: $font-family;
+}
+
+
+.nav-link {
+  font-size: calc(#{$font-size} * 1) !important;
+  font-weight: $font-weight-600;
+  line-height: calc(#{$line-height} * 0.9166) !important;
+  font-family: $font-family;
+}
+
+
+.copyright {
+    font-size: calc(#{$font-size} * 0.875) !important;
+    line-height: calc(#{$line-height} * 0.75) !important;
+}
+
+@media (min-width: 992px) {
+
+  h1,
+  .h1-heading {
+      font-size: calc(#{$font-size} * 3.5) !important;
+      line-height: calc(#{$line-height} * 2.5) !important;
+  }
+
+  .h1-blog-heading {
+    font-size: calc(#{$font-size} * 3.5) !important;
+    line-height: calc(#{$line-height} * 2.5) !important;
+  }
+
+
+  h2,
+  .h2-heading {
+      font-size: calc(#{$font-size} * 3) !important;
+      line-height: calc(#{$line-height} * 2.33333) !important;
+  }
+
+  h3,
+  .h3-heading {
+      font-size: calc(#{$font-size} * 2.25) !important;
+      line-height: calc(#{$line-height} * 1.6666) !important;
+      padding-bottom: 10px !important;
+  }
+
+  span.SubHead,
+  h4,
+  .h4-heading {
+      font-size: calc(#{$font-size} * 1.75) !important;
+      line-height: calc(#{$line-height} * 1.5) !important;
+  }
+
+  h5,
+  .h5-heading {
+      font-size: calc(#{$font-size} * 1.5) !important;
+      line-height: calc(#{$line-height} * 1.166) !important;
+  }
+
+  h6,
+  .h6-heading {
+      font-size: calc(#{$font-size} * 1.25) !important;
+      line-height: calc(#{$line-height} * 1.1666) !important;
+  }
+
+  p {
+      font-size: calc(#{$font-size} * 1) !important;
+      line-height: calc(#{$line-height} * 1) !important;
+  }
+
+
+  .nav-link {
+    font-size: calc(#{$font-size} * 1) !important;
+    line-height: calc(#{$line-height} * 0.9166) !important;
+  }
+
+
+  .copyright {
+      font-size: calc(#{$font-size} * 0.875) !important;
+      line-height: calc(#{$line-height} * 0.75) !important;
+  }
+}
+
+//////////////////////////////////////////////////////////////
+//                                                          ||
+//                         Buttons                          ||
+//                                                          ||
+//////////////////////////////////////////////////////////////
+.btn-size-lg {
+    padding: 15px 40px;
+    font-size: calc(#{$font-size} * 1.125) !important;
+    line-height: calc(#{$line-height} * 1) !important;
+    border-width: 3px;
+    border-style: solid;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-size-sm {
+    padding: 7px 20px;
+    font-size: calc(#{$font-size} * 1) !important;
+    line-height: calc(#{$line-height} * 1) !important;
+    border-width: 2px;
+    border-style: solid;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
+.btn-primary {
+    transition: $transition-speed !important;
+    cursor: pointer !important;
+
+    background-color: $primary !important;
+    font-weight: $font-weight-600 !important;
+    border-radius: 50px !important;
+    border-color: $primary;
+    color: $white !important;
+    text-transform: capitalize;
+    text-decoration: none !important;
+
+
+    &:hover,
+    &:active {
+        background-color: $white !important;
+        color: $primary !important;
+    }
+
+}
+
+.btn-secondary {
+    transition: $transition-speed !important;
+    cursor: pointer !important;
+
+    background-color: $white !important;
+    font-weight: $font-weight-600 !important;
+    border-radius: 50px !important;
+    border-color: $primary !important;
+    color: $primary !important;
+    text-transform: capitalize;
+    text-decoration: none !important;
+
+
+    &:hover,
+    &:active {
+        background-color: $primary !important;
+        color: $white !important;
+    }
+
+}
+
+.btn-white {
+    transition: $transition-speed !important;
+    cursor: pointer !important;
+
+    background-color: $white !important;
+    font-weight: $font-weight-600 !important;
+    border-radius: 50px !important;
+    border-color: $white;
+
+    color: $primary !important;
+    text-transform: capitalize;
+    text-decoration: none !important;
+
+
+    &:hover,
+    &:active {
+        background-color: $primary !important;
+        color: $white !important;
+    }
+
+}
+
+
+//////////////////////////////////////////////////////////////
+//                                                          ||
+//                        Utilities                         ||
+//                                                          ||
+//////////////////////////////////////////////////////////////
+.z-15 {
+    z-index: 15;
+    position: relative;
+}
+//////////////////////////////////////////////////////////////
+//                                                          ||
+//                    Main Navigation                       ||
+//                                                          ||
+//////////////////////////////////////////////////////////////
+.main-navigation {
+    z-index: 150;
+    display: flex;
+    transition: .6s;
+    background-color: $white;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid $borderColor;
+    height: 75px;
+
+
+
+  .nav-menu-item {
+      background: transparent;
+      border: none;
+      padding: 0;
+      transition: $transition-speed !important;
+
+      a {
+        display: block;
+        border: none;
+        background: none;
+        color: $black;
+        transition: $transition-speed !important;
+        font-weight: $font-weight-600;
+        text-decoration: none;
+
+        svg, i {
+          font-size:  0.7rem;
+        }
+
+        &:hover,
+        &:active {
+          color: $primary;
+
+          &:after {
+            transform: scaleX(1);
+          }
+        }
+
+        &:after {
+          display: none;
+        }
+
+
+      }
+
+      li {
+          padding: .35rem 1rem;
+        a {
+          display: block;
+          border: none;
+          background: none;
+          color: $black;
+          transition: $transition-speed !important;
+          font-weight: $font-weight-600;
+          text-decoration: none;
+
+          svg, i {
+            font-size:  0.7rem;
+          }
+
+          &:hover,
+          &:active {
+            color: $primary;
+
+            &:after {
+              transform: scaleX(1);
+            }
+          }
+
+          &:after {
+            display: none;
+          }
+
+
+        }
+
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+
+      &:first-child {
+        padding-left: 1rem;
+      }
+  }
+
+
+  .dropdown-menu.show {
+    display: block;
+    transform: translate(8px, 54px) !important;
+    border-top: 0;
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding: 1rem;
+    box-shadow: 2px 4px 9px 1px transparentize($mid, .8);
+  }
+}
+
+.header-logo {
+  img {
+    width: 175px;
+  }
+}
+//////////////////////////////////////////////////////////////
+//                                                          ||
+//                   Mobile Navigation                      ||
+//                                                          ||
+//////////////////////////////////////////////////////////////
+.nav-btn-close {
+  display: none;
+}
+
+.mobile-nav-news,
+.mobile-nav-support,
+.mobile-nav-who-we-serve,
+.mobile-nav-products,
+.mobile-nav-company,
+.mobile-nav {
+    position: fixed;
+    height: 100vh;
+    top: -100vh;
+    right: 0;
+    width: 100vw;
+    overflow: auto;
+    margin: 0;
+    transition: $transition-speed;
+    background-color: $white;
+    z-index: 125;
+
+    .submenu-link {
+      background: no-repeat;
+      border: none;
+      padding: 0 30px;
+      color: $black;
+      text-decoration: none;
+
+
+      &:hover,
+      &:active {
+          color: $primary;
+      }
+
+    }
+
+
+
+}
+
+.mobile-nav-active {
+  .mobile-nav {
+    right: 0;
+    transition: $transition-speed;
+    top: 75px;
+  }
+
+  .nav-btn-open {
+    display: none;
+  }
+
+  .nav-btn-close {
+    display: block;
+  }
+}
+
+.mobile-nav-who-we-serve-active {
+  .mobile-nav-who-we-serve {
+    right: 0;
+    transition: $transition-speed;
+    top: 75px;
+
+  }
+
+  .nav-btn-open {
+    display: none;
+  }
+
+  .nav-btn-close {
+    display: block;
+  }
+}
+.mobile-nav-products-active {
+  .mobile-nav-products {
+    right: 0;
+    transition: $transition-speed;
+    top: 75px;
+
+  }
+
+  .nav-btn-open {
+    display: none;
+  }
+
+  .nav-btn-close {
+    display: block;
+  }
+}
+.mobile-nav-news-active  {
+  .mobile-nav-news {
+    right: 0;
+    transition: $transition-speed;
+    top: 75px;
+
+  }
+
+  .nav-btn-open {
+    display: none;
+  }
+
+  .nav-btn-close {
+    display: block;
+  }
+}
+.mobile-nav-support-active  {
+  .mobile-nav-support {
+    right: 0;
+    transition: $transition-speed;
+    top: 75px;
+
+  }
+
+  .nav-btn-open {
+    display: none;
+  }
+
+  .nav-btn-close {
+    display: block;
+  }
+}
+.mobile-nav-company-active  {
+  .mobile-nav-company {
+    right: 0;
+    transition: $transition-speed;
+    top: 75px;
+  }
+
+  .nav-btn-open {
+    display: none;
+  }
+
+  .nav-btn-close {
+    display: block;
+  }
+}
+
+
+.nav-btn-close,
+.nav-btn-open,
+.nav-btn-open-state {
+    font-size: 1.65rem;
+    color: $black;
+}
+
+.mobile-nav-row {
+    height: 75px;
+    background-color: $white;
+    border-bottom: 1px solid $borderColor;
+}
+
+
+.remove-mobile-nav-button {
+  background-color: transparent;
+  border: none;
+  color: $black;
+  padding: 0;
+
+  svg{
+    color: $primary;
+  }
+}
+
+
+//////////////////////////////////////////////////////////////
+//                                                          ||
+//                                                          ||
+//                                                          ||
+//////////////////////////////////////////////////////////////

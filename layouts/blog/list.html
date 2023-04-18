@@ -1,0 +1,134 @@
+{{ define "main" }}
+
+  <section id="inner-blog-roll-title-section">
+    <div class="site-container-1240">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="h1-heading text-center">Rx Guardian Blog</h1>
+        </div>
+      </div>
+
+
+
+      <div class="row gx-lg-5">
+
+        {{ range first 2 .Pages  }}
+              <div class="col-12 col-lg-6 mt-4">
+                <div class="blog-post">
+                  <a href="{{ .RelPermalink }}">
+                    <img src="{{ .Params.thumbImage }}" alt="{{ .Params.alt }}" class="w-100">
+                  </a>
+                  <div class="blog-category-row d-flex flex-column t-c-l flex-lg-row aling-items-center justify-content-center justify-content-lg-between mt-2">
+                    <div class="blog-category">
+                        {{ with .Params.tags }}
+                          {{ range . }}
+                          <a class="primary-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
+                            {{ . }}
+                          </a><br>
+                          {{ end }}
+                       {{ end }}
+                      </div>
+                    <div>
+                      <p class="mb-0">
+                        {{  .Params.Date.Format "January 2, 2006" }}
+                      </p>
+                    </div>
+                  </div>
+                   <h5 class="h5-heading t-c-l mt-3 mt-lg-0">
+                     <a href="/news/blog/{{  .Params.Slug  }}" class="title">{{  .Params.Title  }} </a>
+                   </h5>
+
+
+                <!-- <div class="card-text mid-black-text">
+                  {{ .Params.description | htmlUnescape | chomp }} Learn More ...
+                </div> -->
+              </div>
+
+            </div>
+            {{ end }}
+      </div>
+
+      <div class="row justify-content-center pt-5">
+        <div class="col-12">
+          <h2 class="h2-heading text-center">Topics</h2>
+        </div>
+        <div class="col-12 col-lg-3 mt-4">
+          <a href="/tags/home-family" class="blog-resources-btn">
+              <img src="/images/assets/blog/icons/rx-guardian-icon-home-and-family.svg" alt="home and family icon">   Home & Family
+          </a>
+
+        </div>
+
+        <div class="col-12 col-lg-3 mt-4">
+          <a href="/tags/community" class="blog-resources-btn">
+            <img src="/images/assets/blog/icons/rx-guardian-icon-community.svg" alt="Community icon">  Community
+          </a>
+        </div>
+
+        <div class="col-12 col-lg-3 mt-4">
+          <a href="/tags/health-medicine" class="blog-resources-btn">
+            <img src="/images/assets/blog/icons/rx-guardian-icon-health-and-medicine.svg" alt=" Health & Medicine icon">  Health &<br>Medicine
+          </a>
+        </div>
+
+        <div class="col-12 col-lg-3 mt-4">
+          <a href="/tags/legislative" class="blog-resources-btn">
+            <img src="/images/assets/blog/icons/rx-guardian-icon-legislative.svg" alt="Legislative icon">  Legislative
+          </a>
+        </div>
+
+
+
+      </div>
+
+
+
+
+  </section>
+
+  <section id="inner-blog-roll-content-section">
+    <div class="site-container-1240">
+      <div class="row gx-lg-5">
+        {{ range  after 2 .Pages  }}
+          <div class="col-12 col-lg-4 mt-4">
+            <div class="blog-post">
+              <a href="{{ .RelPermalink }}">
+                <img src="{{ .Params.thumbImage }}" alt="{{ .Params.alt }}" class="w-100">
+              </a>
+
+              <div class="d-flex blog-category-row flex-column t-c-l flex-lg-row aling-items-center justify-content-center justify-content-lg-between mt-2">
+                <div class="blog-category">
+                    {{ with .Params.tags }}
+                      {{ range . }}
+                      <a class="primary-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
+                        {{ . }}
+                      </a><br>
+                      {{ end }}
+                   {{ end }}
+                  </div>
+                <div>
+                  <p class="mb-0">
+                    {{  .Params.Date.Format "January 2, 2006" }}
+                  </p>
+                </div>
+              </div>
+               <h5 class="h5-heading t-c-l mt-3 mt-lg-0">
+                 <a href="/news/blog/{{  .Params.Slug  }}" class="title">{{  .Params.Title  }} </a>
+               </h5>
+
+
+            <!-- <div class="card-text mid-black-text">
+              {{ .Params.description | htmlUnescape | chomp }} Learn More ...
+            </div> -->
+          </div>
+
+          </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </section>
+
+
+
+{{ end }}
