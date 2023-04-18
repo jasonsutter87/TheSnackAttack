@@ -31,7 +31,7 @@ collections:
     create: true
     fields:
       - { name: "title", label: "Title", widget: "string" }
-      - { name: "design type", label: "Design Type", widget: "select", options: [ "recipe 1", "recipe 2", "recipe 3", "recipe 4", "recipe 5", "recipe 6", "recipe 7", "recipe 8", "recipe 9", "recipe 10", "recipe 11", "recipe 12", "recipe 13", "recipe 14", "recipe 15", "recipe 16"] }
+      - { name: "design layout type", label: "Design Layout Type", widget: "select", options: [ "Layout 1", "Layout 2", "Layout 3", "Layout 4", "Layout 5", "Layout 6", "Layout 7", "Layout 8", "Layout 9", "Layout 10", "Layout 11", "Layout 12", "Layout 13", "Layout 14", "Layout 15", "Layout 16"] }
       - { name: "meal type", label: "Meal Type", widget: "select", options: [ "Breakfast", "Pasta", "Meat", "Bread", "desserts"] }
       - { name: "intro", label: "Introduction", widget: "markdown", required: false}
       - { name: "prep_time", label: "Preparation Time (in minutes)", widget: "number" }
