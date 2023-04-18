@@ -1,0 +1,4 @@
+---
+title: test
+type: cover
+---
