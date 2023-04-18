@@ -1,6 +1,7 @@
 ---
 title: Y O U R R E C I P E T I T L E
-type: recipe 1
+design layout type: Layout 1
+meal type: Breakfast
 prep_time: 5
 cook_time: 15
 serves: 7
@@ -28,4 +29,5 @@ directions: |
      until golden, about 1 to 2 mins
 images:
   - image: /images/uploads/toastoven-blog-6.jpg
+type: recipe 1
 ---
