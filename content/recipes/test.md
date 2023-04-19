@@ -1,19 +1,21 @@
 ---
 title: Y O U R R E C I P E T I T L E
 design layout type: Layout 1
-meal type: Breakfast
+meal type: Pasta
 prep_time: 5
 cook_time: 15
 serves: 7
-ingredients: |
+ingredients: |-
   * 1 tsp salt
   * 1 egg 
   * 1 ¼ cups milk
   * cooking spray
   * 3 tbsp butter, melted
-  *  3 ½ tsp baking powder
-  *  1 ½ cups all-purpose flour
+  * 3 ½ tsp baking powder
+  * 1 ½ cups all-purpose flour
   * 1 tbsp white sugar
+  * h﻿bbj
+  * s﻿nack kisses
 directions: |
   1. Sift together flour, baking powder, salt, and
      sugar in a large bowl.
