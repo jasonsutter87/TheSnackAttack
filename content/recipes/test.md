@@ -31,5 +31,5 @@ directions: |
      until golden, about 1 to 2 mins
 images:
   - image: /images/uploads/toastoven-blog-6.jpg
-type: recipe 1
+type: recipe1
 ---

@@ -1,4 +1,4 @@
-baseURL = 'https://rxguardian.com/'
+baseURL = '/'
 languageCode = 'en-us'
 enableRobotsTXT = true
 

@@ -1,0 +1,70 @@
+{{ $title := .Params.title }}
+{{ $type := .Params.type }}
+{{ $intro := .Params.intro }}
+{{ $prepTime := .Params.prep_time }}
+{{ $cookTime := .Params.cook_time }}
+{{ $serves := .Params.serves }}
+{{ $ingredients := .Params.ingredients }}
+{{ $directions := .Params.directions }}
+{{ $notes := .Params.notes }}
+{{ $images := .Params.images }}
+
+
+
+<section class="site-container-1240" id="recipe1">
+    <div class="row">
+        <div class="col-8">
+            <div class="row px-5">
+                <div class="col-12 text-center py-5">
+                    <h1>{{  $title  }}</h1>
+                </div>
+                <div class="col-12 py-5">
+                    <div class="d-flex justify-content-between">
+                        <div class="text-center">
+                            <i class="fal fa-clock recipes-icons"></i>
+                            <h4 class="text-uppercase">Prep {{ $prepTime }} min</h4>
+                        </div>
+                        <div class="text-center">
+                            <i class="fal fa-hourglass-half recipes-icons"></i>
+                            <h4 class="text-uppercase">Cook {{ $cookTime }} min</h4>
+                        </div>
+                        <div class="text-center">
+                            <i class="fal fa-users recipes-icons"></i>
+                            <h4 class="text-uppercase">Serves {{ $serves }}</h4>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="col-12">
+                    <h3 class="text-uppercase">Ingredients</h3>
+                    <div class="ingredients-content">
+                        {{ $ingredients  | markdownify  }}
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <h3 class="text-uppercase">Method</h3>
+                    <div class="method-content">
+                        {{ $directions  | markdownify  }}
+                    </div>
+                </div>
+                {{ if .Params.notes}}
+                    <div class="col-12">
+                        <h3 class="text-uppercase">Notes</h3>
+                        <p>{{ .Params.notes }}</p>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+        <div class="col-4">
+            {{ with $images }}
+            <div class="images">
+              {{ range . }}
+                  <img class="recipe1-img" src="{{ .image }}" alt="{{ with .caption }}{{ . }}{{ end }}" />
+               
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+    </div>
+</section>

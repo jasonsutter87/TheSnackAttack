@@ -1,13 +1,11 @@
 {{ define "main" }}
-
-<h1>Hello World</h1>
-
 {{ range .Site.RegularPages.ByWeight }}
     {{ if eq .Section "covers" }}
       {{ partial "cover.html" . }}
     {{ else }}
-      {{ partial "recipe.html" . }}
+      {{ if eq .Params.type "recipe1" }}
+          {{ partial "recipes/recipe1.html" . }}
+      {{ end }}
     {{ end }}
   {{ end }}
- 
 {{ end }}
