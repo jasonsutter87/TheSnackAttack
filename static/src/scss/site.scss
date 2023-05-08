@@ -867,17 +867,13 @@ p {
     padding: 0;
     size: 8.5in 11in;
   }
-  
-  .content {
-    width: 8.5in;
-    height: 11in;
-  }
 
-
-  
   .site-container-1240 {
     padding-right: 0 !important;
     padding-left: 0 !important;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
   }
 
 
