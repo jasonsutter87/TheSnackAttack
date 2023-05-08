@@ -11,7 +11,7 @@
 
 html, body {
   font-size: 16px;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   margin: 0;
   font-weight: 400;
   line-height: 24px;
@@ -121,14 +121,14 @@ ul li {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 ol li {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 @media (min-width: 992px) {
@@ -192,7 +192,7 @@ ol li {
   color: #0079C7 !important;
   text-decoration: none;
   transition: 0.5s !important;
-  font-weight: 600;
+  font-weight: 700;
   font-size: calc(16px * 1) !important;
   line-height: calc(24px * 0.833) !important;
 }
@@ -204,7 +204,7 @@ ol li {
   color: #ffffff !important;
   text-decoration: none;
   transition: 0.5s !important;
-  font-weight: 600;
+  font-weight: 700;
   font-size: calc(16px * 1) !important;
   line-height: calc(24px * 0.833) !important;
 }
@@ -213,7 +213,7 @@ ol li {
 }
 
 .bold {
-  font-weight: 600 !important;
+  font-weight: 700 !important;
 }
 
 .g-6, .gx-6 {
@@ -227,32 +227,25 @@ h1, h2, h3, h4, h5, h6 {
 h1,
 .h1-heading {
   font-size: calc(16px * 3) !important;
-  font-weight: 600;
+  font-weight: 700;
   line-height: calc(24px * 2.16) !important;
-  font-family: "Open Sans", sans-serif !important;
-}
-
-.h1-blog-heading {
-  font-size: calc(16px * 2) !important;
-  font-weight: 600;
-  line-height: calc(24px * 1.4) !important;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Playfair Display", serif !important;
 }
 
 h2,
 .h2-heading {
   font-size: calc(16px * 2.25) !important;
-  font-weight: 600;
+  font-weight: 700;
   line-height: calc(24px * 1.66) !important;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Playfair Display", serif !important;
 }
 
 h3,
 .h3-heading {
   font-size: calc(16px * 1.75) !important;
-  font-weight: 600;
+  font-weight: 400;
   line-height: calc(24px * 1.5) !important;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Faustina", serif !important;
   padding-bottom: 10px !important;
 }
 
@@ -262,7 +255,7 @@ h4,
   font-size: calc(16px * 1.5) !important;
   font-weight: 400;
   line-height: calc(24px * 1.166) !important;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Faustina", serif !important;
 }
 
 h5,
@@ -270,29 +263,29 @@ h5,
   font-size: calc(16px * 1.25) !important;
   font-weight: 400;
   line-height: calc(24px * 1.166) !important;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Faustina", serif !important;
 }
 
 h6,
 .h6-heading {
   font-size: calc(16px * 1.125) !important;
-  font-weight: 600;
+  font-weight: 400;
   line-height: calc(24px * 1.083) !important;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Faustina", serif !important;
 }
 
 p {
   font-size: calc(16px * 1) !important;
   font-weight: 400;
   line-height: calc(24px * 1) !important;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .nav-link {
   font-size: calc(16px * 1) !important;
-  font-weight: 600;
+  font-weight: 700;
   line-height: calc(24px * 0.9166) !important;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .copyright {
@@ -376,7 +369,7 @@ p {
   transition: 0.5s !important;
   cursor: pointer !important;
   background-color: #0079C7 !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   border-radius: 50px !important;
   border-color: #0079C7;
   color: #ffffff !important;
@@ -392,7 +385,7 @@ p {
   transition: 0.5s !important;
   cursor: pointer !important;
   background-color: #ffffff !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   border-radius: 50px !important;
   border-color: #0079C7 !important;
   color: #0079C7 !important;
@@ -408,7 +401,7 @@ p {
   transition: 0.5s !important;
   cursor: pointer !important;
   background-color: #ffffff !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   border-radius: 50px !important;
   border-color: #ffffff;
   color: #0079C7 !important;
@@ -449,7 +442,7 @@ p {
   background: none;
   color: #444444;
   transition: 0.5s !important;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
 }
 .main-navigation .nav-menu-item a svg, .main-navigation .nav-menu-item a i {
@@ -473,7 +466,7 @@ p {
   background: none;
   color: #444444;
   transition: 0.5s !important;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
 }
 .main-navigation .nav-menu-item li a svg, .main-navigation .nav-menu-item li a i {

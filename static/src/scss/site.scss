@@ -16,12 +16,14 @@ $font-size: 18px;
 $line-height: 30px;
 
 $font-weight-400: 400;
-$font-weight-600: 600;
+$font-weight-700: 700;
 
 
 $btn-padding-size: 30px;
 $transition-speed: .5s;
-$font-family: 'Open Sans', sans-serif !important;
+$font-family-p: 'Roboto', sans-serif !important;
+$font-family-h1: 'Playfair Display', serif !important;
+$font-family-h3: 'Faustina', serif !important;
 $line-height: 24px;
 $font-size: 16px;
 
@@ -44,7 +46,7 @@ $font-size: 16px;
 
 html, body {
     font-size: 16px;
-    font-family: $font-family;
+    font-family: $font-family-p;
     margin: 0;
     font-weight: $font-weight-400;
     line-height: $line-height;
@@ -155,14 +157,14 @@ ul li {
     font-size: $font-size;
     font-weight: $font-weight-400;
     line-height: $line-height;
-    font-family: $font-family;
+    font-family: $font-family-p;
 }
 
 ol li {
     font-size: $font-size;
     font-weight: $font-weight-400;
     line-height: $line-height;
-    font-family: $font-family;
+    font-family: $font-family-p;
 }
 
 .col-lg-5col {
@@ -251,7 +253,7 @@ ol li {
     color: $primary !important;
     text-decoration: none;
     transition: $transition-speed !important;
-    font-weight: $font-weight-600;
+    font-weight: $font-weight-700;
     font-size: calc(#{$font-size} * 1) !important;
     line-height: calc(#{$line-height} * 0.833) !important;
 
@@ -265,7 +267,7 @@ ol li {
     color: $white !important;
     text-decoration: none;
     transition: $transition-speed !important;
-    font-weight: $font-weight-600;
+    font-weight: $font-weight-700;
     font-size: calc(#{$font-size} * 1) !important;
     line-height: calc(#{$line-height} * 0.833) !important;
 
@@ -277,7 +279,7 @@ ol li {
 
 
 .bold {
-  font-weight: $font-weight-600 !important;
+  font-weight: $font-weight-700 !important;
 }
 
 .g-6, .gx-6 {
@@ -296,16 +298,9 @@ h1, h2, h3, h4, h5, h6 {
 h1,
 .h1-heading {
     font-size: calc(#{$font-size} * 3) !important;
-    font-weight: $font-weight-600;
+    font-weight: $font-weight-700;
     line-height: calc(#{$line-height} * 2.16) !important;
-    font-family: $font-family;
-}
-
-.h1-blog-heading {
-    font-size: calc(#{$font-size} * 2) !important;
-    font-weight: $font-weight-600;
-    line-height: calc(#{$line-height} * 1.4) !important;
-    font-family: $font-family;
+    font-family: $font-family-h1;
 }
 
 
@@ -313,17 +308,17 @@ h1,
 h2,
 .h2-heading {
     font-size: calc(#{$font-size} * 2.25) !important;
-    font-weight: $font-weight-600;
+    font-weight: $font-weight-700;
     line-height: calc(#{$line-height} * 1.66) !important;
-    font-family: $font-family;
+    font-family: $font-family-h1;
 }
 
 h3,
 .h3-heading {
     font-size: calc(#{$font-size} * 1.75) !important;
-    font-weight: $font-weight-600;
+    font-weight: $font-weight-400;
     line-height: calc(#{$line-height} * 1.5) !important;
-    font-family: $font-family;
+    font-family: $font-family-h3;
     padding-bottom: 10px !important;
 }
 
@@ -333,7 +328,7 @@ h4,
     font-size: calc(#{$font-size} * 1.5) !important;
     font-weight: $font-weight-400;
     line-height: calc(#{$line-height} * 1.166) !important;
-    font-family: $font-family;
+    font-family: $font-family-h3;
 }
 
 h5,
@@ -341,15 +336,15 @@ h5,
     font-size: calc(#{$font-size} * 1.25) !important;
     font-weight: $font-weight-400;
     line-height: calc(#{$line-height} * 1.166) !important;
-    font-family: $font-family;
+    font-family: $font-family-h3;
 }
 
 h6,
 .h6-heading {
     font-size: calc(#{$font-size} * 1.125) !important;
-    font-weight: $font-weight-600;
+    font-weight: $font-weight-400;
     line-height: calc(#{$line-height} * 1.083) !important;
-    font-family: $font-family;
+    font-family: $font-family-h3;
 
 }
 
@@ -357,15 +352,15 @@ p {
     font-size: calc(#{$font-size} * 1) !important;
     font-weight: $font-weight-400;
     line-height: calc(#{$line-height} * 1) !important;
-    font-family: $font-family;
+    font-family: $font-family-p;
 }
 
 
 .nav-link {
   font-size: calc(#{$font-size} * 1) !important;
-  font-weight: $font-weight-600;
+  font-weight: $font-weight-700;
   line-height: calc(#{$line-height} * 0.9166) !important;
-  font-family: $font-family;
+  font-family: $font-family-p;
 }
 
 
@@ -472,7 +467,7 @@ p {
     cursor: pointer !important;
 
     background-color: $primary !important;
-    font-weight: $font-weight-600 !important;
+    font-weight: $font-weight-700 !important;
     border-radius: 50px !important;
     border-color: $primary;
     color: $white !important;
@@ -493,7 +488,7 @@ p {
     cursor: pointer !important;
 
     background-color: $white !important;
-    font-weight: $font-weight-600 !important;
+    font-weight: $font-weight-700 !important;
     border-radius: 50px !important;
     border-color: $primary !important;
     color: $primary !important;
@@ -514,7 +509,7 @@ p {
     cursor: pointer !important;
 
     background-color: $white !important;
-    font-weight: $font-weight-600 !important;
+    font-weight: $font-weight-700 !important;
     border-radius: 50px !important;
     border-color: $white;
 
@@ -572,7 +567,7 @@ p {
         background: none;
         color: $black;
         transition: $transition-speed !important;
-        font-weight: $font-weight-600;
+        font-weight: $font-weight-700;
         text-decoration: none;
 
         svg, i {
@@ -603,7 +598,7 @@ p {
           background: none;
           color: $black;
           transition: $transition-speed !important;
-          font-weight: $font-weight-600;
+          font-weight: $font-weight-700;
           text-decoration: none;
 
           svg, i {
