@@ -45,4 +45,5 @@ directions: >-
   10. Cover the filled dish with foil and bake at 350 degrees for 35 minutes
 images:
   - image: /images/uploads/toastoven-blog-6.jpg
+type: recipe1
 ---
